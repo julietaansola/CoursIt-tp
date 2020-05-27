@@ -1,93 +1,81 @@
 .main{
-    .series-courflix {
-        margin: -100px 0 50px;
-        padding: 0 80px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        -ms-overflow-style: none;
-        &::-webkit-scrollbar {
-            display: none;
-            height: 0;
-            width: 0;
-            background-color: transparent;
+    .carrousel{
+        padding-left: 110px;
+        padding-right: 100px;
+           
         }
-        .series-wrapper{
-            .series-carousel {
-                overflow-x: auto;
+          .series-courflix {
+                margin: -50px 0 50px;
+                padding: 0 80px;
                 display: flex;
-                flex-direction: row;
-                scroll-snap-type: x mandatory;
-                scroll-snap-stop: always;
-                -webkit-overflow-scrolling: touch;
-                margin-top: 22px;
-                margin-bottom: 50px;
-                align-items: center;
-                .serie {
-                    margin-right: 16px;
-                    scroll-snap-align: start;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .arrows{
-                        -webkit-touch-callout: none;
-                        user-select: none;
-                        .arrow{
-                            position: absolute;
-                            border: none;
-                            color: white;
-                            background-color: rgba(0, 0, 0, 0.3);
-                            font-size: 1.5rem;
-                            height: 20%;
-                            top: calc(60% - 20%);
-                            width: 40px;
-                            cursor: pointer;
-                            z-index: 500;
-                            transition: 0.2s ease all;
-                            opacity: 0;
-                            .arrow--left{
-                                left: 0;  
-                            }
-                            .arrow--right{
-                                right: 0;
-                            }
-                        }
+                flex-direction: column;
+                width: 100%;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                    height: 0;
+                    width: 0;
+                    background-color: transparent;
+                }
+                .series-title{
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 100;
+                }
+                .series-wrapper{
+                    .series-carousel {
+                        overflow-x: auto;
+                        display: flex;
+                        flex-direction: row;
+                        scroll-snap-type: x mandatory;
+                        scroll-snap-stop: always;
+                        -webkit-overflow-scrolling: touch;
+                        margin-top: 22px;
+                        margin-bottom: 50px;
+                        align-items: center;
                         
-                    }
-                    .preview-link{
-                        .series-img {
-                            margin-bottom: 12px;
-                        }
-                    }
-                    .grey-loading {
-                        margin-top: 5px;
-                        height: 7px;
-                        width: 280px;
-                        background-color: grey;
-                        .red-loading-1 {
-                            width: 34%;
-                            background-color: indianred;
-                            height: 100%;
-                        }
-                        .red-loading-2 {
-                            width: 11%;
-                            background-color: indianred;
-                            height: 100%;
-                        }
-                        .red-loading-3 {
-                            width: 75%;
-                            background-color: indianred;
-                            height: 100%;
-                        }
-                        .red-loading-4 {
-                            width: 27%;
-                            background-color: indianred;
-                            height: 100%;
+                        .serie {
+                            margin-right: 16px;
+                            scroll-snap-align: start;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            
+                            
+                            .preview-link{
+                                .series-img {
+                                    margin-bottom: 12px;
+                                   
+                                }
+                            }
+                            .grey-loading {
+                                margin-top: 5px;
+                                height: 7px;
+                                width: 280px;
+                                background-color: grey;
+                                .red-loading-1 {
+                                    width: 34%;
+                                    background-color: #e50914;
+                                    height: 100%;
+                                }
+                                .red-loading-2 {
+                                    width: 11%;
+                                    background-color: #e50914;
+                                    height: 100%;
+                                }
+                                .red-loading-3 {
+                                    width: 75%;
+                                    background-color: #e50914;
+                                    height: 100%;
+                                }
+                                .red-loading-4 {
+                                    width: 27%;
+                                    background-color: #e50914;
+                                    height: 100%;
+                                }
+                            }
                         }
                     }
                 }
             }
-        }
-    }
-
-}
+    } 

@@ -2,7 +2,8 @@ $color: #686868;
 
 /* LINKS */
 .link {
-    padding: 50px;
+    padding: 50px 350px ;
+    
     .sub-links ul {
       list-style: none;
       padding: 0;
@@ -18,12 +19,16 @@ $color: #686868;
             }
         }
     }
-    .logos a{
-      padding: 10px;
-      .logo {
+    .logos {
+      padding-bottom: 50px;
+        a{
+      padding: 50px 20px;
+      
+        .logo {
         color: $color;
       }
     }
+  }
   } 
   
   /* FOOTER */

@@ -16,8 +16,8 @@
             <nav class="nav">
                 <a href="#" class="link-js header-options">Inicio</a>
                 <a href="#series" class="header-options">Series</a>
-                <a href="#peliculas" class="header-options">Peliculas</a>
-                <a href="#" class="header-options">Agregados recientemente</a>
+                <a href="#" class="header-options">Peliculas</a>
+                <a href="#reciente" class="header-options">Agregados recientemente</a>
                 <a href="#" class="header-options">Mi lista</a>
             </nav>
         </header>
@@ -29,24 +29,26 @@
             
             <!-- HERO -->
             <section class="hero">
-            <div class="hero-img hero-img-js" id="hero-img1" style="background-image: url(./assets/main.png);" > 
+            <div class="hero-img hero-img-js" id="hero-img1" style="background-image: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 80%),url(./assets/main.png) ;" > 
                 <h2 class="hero-subtitle">Original de COURFLIX</h2>
                 <h1 class="hero-title">BLACK SUMMER</h1>
                 <a href="#" class="hero-button series-js">Reproducir</a>
                 <a href="#" class="hero-button">+ mi lista</a>
-                <h3 class="hero-series-subtitle">Ve la temporada 1</h3>
+                <a href="#">  <h3 class="hero-series-subtitle">Ve la temporada 1</h3></a>
+               
                 <p class="hero-series-description">Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, seran unas vacaciones de ensueño.</p>
             </div>
         </section>
             <!-- END OF HERO -->
             <!-- CARRROUSEL -->
             <section class="carrousel">
+               
             <div class="series-courflix">
                 <div class="series-wrapper" id="series">
                     <span class="series-title">Series</span>
                     
                     <div class="series-carousel">
-                        
+                        <button role="button" id="arrow-left" class="arrow-left"><i class="fas fa-angle-left"></i></button>
                         <div class="serie series-js">
                             <a href="preview.html" class="preview-link">
                             <img src="./assets/preview-1.jpg" alt="" class="series-img"></a>
@@ -79,7 +81,7 @@
                             <a href="preview.html" class="preview-link">
                             <img src="./assets/preview-8.jpg" alt="" class="series-img"></a>
                         </div>
-                    
+                        <button role="button" id="arrow-right" class="arrow-right"><i class="fas fa-angle-right"></i></button>
                 </div>
                
                 <div class="series-wrapper">
@@ -143,8 +145,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="series-wrapper" id="peliculas">
-                    <span class="series-title">Peliculas</span>
+                <div class="series-wrapper" id="reciente">
+                    <span class="series-title">Agregados recientemente</span>
                     <div class="series-carousel">
                         <div class="serie series-js">
                             <a href="preview.html" class="preview-link">
@@ -191,6 +193,7 @@
           <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
           <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
           <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
         </div>
         <div class="sub-links">
           <ul>

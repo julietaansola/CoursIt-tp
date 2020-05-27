@@ -1,10 +1,14 @@
 .main{
     .hero{ 
-         
+        
         .hero-img {
-            background: linear-gradient(90deg, rgba(0, 0, 0, 0.884), rgba(170, 170, 170, 0.11));
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.3rem;
+            }
             background-size: cover;
-            padding: 175px 80px 130px;
+            padding: 300px 200px 250px;
             min-height: 800px;
             width: 100%;
             color: #fff;
@@ -35,10 +39,15 @@
                 color: #fff;
                 font-size: 1.3rem;
                 font-weight: 300;
+                &:hover{
+                    background: #fff;
+                    color: #000
+                }
             }
             .hero-series-subtitle {
                 margin-top: 20px;
                 font-size: 1.4rem;
+                
             }
             .hero-series-description {
                 margin-top: 15px;
