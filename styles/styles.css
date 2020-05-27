@@ -1,0 +1,436 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.801218);
+}
+
+.header .title-link .header-title {
+  padding: 12px 85px;
+}
+
+.header .nav {
+  white-space: nowrap;
+  display: inline;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .header .nav .wrapper .header .nav {
+    display: none;
+  }
+}
+
+.header .nav .header-options {
+  color: #fff;
+  padding-right: 27px;
+  text-decoration: none;
+}
+
+.header .nav .header-options:hover {
+  -webkit-transform: scale(1, 3);
+          transform: scale(1, 3);
+}
+
+.series-preview {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.0001)), to(#000000));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
+  background-size: cover;
+  padding: 60px 80px 130px;
+  color: #fff;
+  min-width: 100vw;
+  min-height: 800px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.series-preview .fa-arrow-left {
+  position: absolute;
+  top: 60;
+  left: 30;
+  color: #fff;
+  padding: 25px 0 0;
+  font-size: 2rem;
+}
+
+.series-preview .series-details {
+  margin: -40px 0 29px;
+}
+
+.series-preview .series-details .span {
+  margin-right: 10px;
+}
+
+.series-preview .series-details .coincidence-meter {
+  color: #009C04;
+  font-weight: bold;
+}
+
+.series-preview .series-details .release-year {
+  color: #FFFFFF;
+}
+
+.series-preview .series-details .appropiate-age {
+  color: #FFFFFF;
+  padding: 2px 6px;
+  border: 1px solid #979797;
+  border-radius: 8px;
+}
+
+.series-preview .series-details .seasons-available {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.series-preview .button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 198px;
+  height: 60px;
+  background: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.series-preview .button-1 {
+  background-color: #ED0A1D;
+}
+
+.series-preview .button-1:hover {
+  background-color: #eb8e9c;
+}
+
+.series-preview .button-1 .button-2 {
+  background-color: grey;
+}
+
+.series-preview .button-1 .button-2:hover {
+  background-color: #e6e2e2;
+}
+
+.series-preview .far {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 7px;
+  margin-right: 10px;
+}
+
+.series-preview .far:hover {
+  color: #ED0A1D;
+}
+
+.series-preview .series-description {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  max-width: 600px;
+  line-height: 2.1rem;
+  font-weight: 300;
+}
+
+.main .series-courflix {
+  margin: -100px 0 50px;
+  padding: 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -ms-overflow-style: none;
+}
+
+.main .series-courflix::-webkit-scrollbar {
+  display: none;
+  height: 0;
+  width: 0;
+  background-color: transparent;
+}
+
+.main .series-courflix .series-wrapper .series-carousel {
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 22px;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie {
+  margin-right: 16px;
+  scroll-snap-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .arrows .arrow {
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  height: 20%;
+  top: calc(60% - 20%);
+  width: 40px;
+  cursor: pointer;
+  z-index: 500;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  opacity: 0;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .arrows .arrow .arrow--left {
+  left: 0;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .arrows .arrow .arrow--right {
+  right: 0;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .preview-link .series-img {
+  margin-bottom: 12px;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .grey-loading {
+  margin-top: 5px;
+  height: 7px;
+  width: 280px;
+  background-color: grey;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .grey-loading .red-loading-1 {
+  width: 34%;
+  background-color: indianred;
+  height: 100%;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .grey-loading .red-loading-2 {
+  width: 11%;
+  background-color: indianred;
+  height: 100%;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .grey-loading .red-loading-3 {
+  width: 75%;
+  background-color: indianred;
+  height: 100%;
+}
+
+.main .series-courflix .series-wrapper .series-carousel .serie .grey-loading .red-loading-4 {
+  width: 27%;
+  background-color: indianred;
+  height: 100%;
+}
+
+/* LINKS */
+.link {
+  padding: 50px;
+}
+
+.link .sub-links ul {
+  list-style: none;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.link .sub-links ul a {
+  color: #686868;
+  text-decoration: none;
+}
+
+.link .sub-links ul a:hover {
+  color: #686868;
+  text-decoration: underline;
+}
+
+.link .logos a {
+  padding: 10px;
+}
+
+.link .logos a .logo {
+  color: #686868;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #686868;
+  margin: 10px;
+}
+
+.main .hero .hero-img {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.884)), to(rgba(170, 170, 170, 0.11)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.884), rgba(170, 170, 170, 0.11));
+  background-size: cover;
+  padding: 175px 80px 130px;
+  min-height: 800px;
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+
+.main .hero .hero-img .hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.main .hero .hero-img .hero-title {
+  font-size: 7.5rem;
+  margin-bottom: 15px;
+  line-height: 6rem;
+  max-width: 650px;
+  font-weight: bold;
+}
+
+.main .hero .hero-img .hero-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 198px;
+  height: 60px;
+  background: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.main .hero .hero-img .hero-series-subtitle {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.main .hero .hero-img .hero-series-description {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  max-width: 600px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  min-width: 100vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper .main .active {
+  display: none;
+}
+
+.wrapper .main .gradient {
+  width: 100%;
+  height: 150px;
+  margin-top: -150px;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 36%, rgba(0, 0, 0, 0) 100%);
+}
+/*# sourceMappingURL=styles.css.map */

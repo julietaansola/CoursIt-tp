@@ -1,0 +1,36 @@
+$color: #686868;
+
+/* LINKS */
+.link {
+    padding: 50px;
+    .sub-links ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      a {
+          color: $color;
+          text-decoration: none;
+          &:hover {
+              color: $color;
+              text-decoration: underline;
+            }
+        }
+    }
+    .logos a{
+      padding: 10px;
+      .logo {
+        color: $color;
+      }
+    }
+  } 
+  
+  /* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: $color;
+    margin: 10px;
+  }
+  
