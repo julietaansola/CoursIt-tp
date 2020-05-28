@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <script src="https://kit.fontawesome.com/4422c6237d.js" crossorigin="anonymous"></script>
     <title>Courflix</title>
 </head>
@@ -41,149 +43,124 @@
         </section>
             <!-- END OF HERO -->
             <!-- CARRROUSEL -->
-            <section class="carrousel">
-               
-            <div class="series-courflix">
-                <div class="series-wrapper" id="series">
-                    <span class="series-title">Series</span>
-                    
-                    <div class="series-carousel">
-                        <button role="button" id="arrow-left" class="arrow-left"><i class="fas fa-angle-left"></i></button>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                            <img src="./assets/preview-1.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                            <img src="./assets/preview-2.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                            <img src="./assets/preview-3.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                            <img src="./assets/preview-4.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-5.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-6.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-7.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                            <img src="./assets/preview-8.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <button role="button" id="arrow-right" class="arrow-right"><i class="fas fa-angle-right"></i></button>
-                </div>
-               
+            <div class="container">
+
                 <div class="series-wrapper">
-                    <span class="series-title">Seguir viendo contenido de Tucu</span>
-                    <div class="series-carousel">
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-9.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                                <div class="red-loading-1"></div>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                             <img src="./assets/preview-10.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                                <div class="red-loading-2"></div>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-2.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                                <div class="red-loading-3"></div>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-8.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                            <div class="red-loading-4"></div>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-11.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                                <div class="red-loading-1"></div>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="#" class="preview-link">
-                                <img src="./assets/preview-16.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                                <div class="red-loading-2"></div>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-10.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                                <div class="red-loading-3"></div>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-1.jpg" alt="" class="series-img"></a>
-                            <div class="grey-loading">
-                            <div class="red-loading-4"></div>
-                            </div>
-                        </div>
+        
+                    <h3 class="series-wrapper__title">Series</h3>
+        
+                    <div class="series-carrousel" id="series">
+                        <!-- <span class="left-arrow"><i class="fa fa-arrow-left"></i></span> -->
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-1.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-2.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-3.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-4.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-5.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-6.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <!-- <span class="right-arrow"><i class="fa fa-arrow-right"></i></span> -->
+        
                     </div>
+        
                 </div>
-                <div class="series-wrapper" id="reciente">
-                    <span class="series-title">Agregados recientemente</span>
-                    <div class="series-carousel">
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-11.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-12.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-13.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-14.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-15.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-16.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-7.jpg" alt="" class="series-img"></a>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="preview.html" class="preview-link">
-                                <img src="./assets/preview-8.jpg" alt="" class="series-img"></a>
-                        </div>
+        
+                <div class="series-wrapper">
+        
+                    <h3 class="series-wrapper__title">Seguir viendo contenido de Tucu</h3>
+        
+                    <div class="series-carrousel" id="mi-lista">
+                        <!-- <span class="left-arrow"><i class="fa fa-arrow-left"></i></span> -->
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-13.jpg" alt="serie" class="series-carrousel__image">
+                            <div class="progress-bar">
+                                <div class="progress-bar__completed completed-one"></div>
+                            </div>
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-11.jpg" alt="serie" class="series-carrousel__image">
+                            <div class="progress-bar">
+                                <div class="progress-bar__completed completed-two"></div>
+                            </div>
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-1.jpg" alt="serie" class="series-carrousel__image">
+                            <div class="progress-bar">
+                                <div class="progress-bar__completed completed-three"></div>
+                            </div>
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-5.jpg" alt="serie" class="series-carrousel__image">
+                            <div class="progress-bar">
+                                <div class="progress-bar__completed completed-four"></div>
+                            </div>
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-2.jpg" alt="serie" class="series-carrousel__image">
+                            <div class="progress-bar">
+                                <div class="progress-bar__completed completed-five"></div>
+                            </div>
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-9.jpg" alt="serie" class="series-carrousel__image">
+                            <div class="progress-bar">
+                                <div class="progress-bar__completed completed-six"></div>
+                            </div>
+                        </a>
+                        <!-- <span class="right-arrow"><i class="fa fa-arrow-right"></i></span> -->
+        
+        
                     </div>
+        
                 </div>
+        
+        
+                <div class="series-wrapper">
+        
+                    <h3 class="series-wrapper__title">Agregados recientemente</h3>
+        
+                    <div class="series-carrousel" id="agregados">
+                        <!-- <span class="left-arrow js-left-third"><i class="fa fa-arrow-left"></i></span> -->
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-7.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-8.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-9.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-10.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-11.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <a href="preview.html" class="series-carrousel__link">
+                            <img src="./assets/preview-12.jpg" alt="serie" class="series-carrousel__image">
+                        </a>
+                        <!-- <span class="right-arrow"><i class="fa fa-arrow-right"></i></span> -->
+        
+        
+                    </div>
+        
+                </div>
+        
+        
+        
+        
+        
             </div>
-        </section>
             <!-- END OF CARROUSEL -->
         </main>
     <!-- LINKS -->
@@ -224,6 +201,9 @@
       <!-- END OF FOOTER -->
 
     </div>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

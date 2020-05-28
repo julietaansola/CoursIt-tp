@@ -1,81 +1,83 @@
-.main{
-    .carrousel{
-        padding-left: 110px;
-        padding-right: 100px;
-           
-        }
-          .series-courflix {
-                margin: -50px 0 50px;
-                padding: 0 80px;
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                -ms-overflow-style: none;
-                &::-webkit-scrollbar {
-                    display: none;
-                    height: 0;
-                    width: 0;
-                    background-color: transparent;
-                }
-                .series-title{
-                    color: white;
-                    font-size: 28px;
-                    font-weight: 100;
-                }
-                .series-wrapper{
-                    .series-carousel {
-                        overflow-x: auto;
-                        display: flex;
-                        flex-direction: row;
-                        scroll-snap-type: x mandatory;
-                        scroll-snap-stop: always;
-                        -webkit-overflow-scrolling: touch;
-                        margin-top: 22px;
-                        margin-bottom: 50px;
-                        align-items: center;
-                        
-                        .serie {
-                            margin-right: 16px;
-                            scroll-snap-align: start;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            
-                            
-                            .preview-link{
-                                .series-img {
-                                    margin-bottom: 12px;
-                                   
-                                }
-                            }
-                            .grey-loading {
-                                margin-top: 5px;
-                                height: 7px;
-                                width: 280px;
-                                background-color: grey;
-                                .red-loading-1 {
-                                    width: 34%;
-                                    background-color: #e50914;
-                                    height: 100%;
-                                }
-                                .red-loading-2 {
-                                    width: 11%;
-                                    background-color: #e50914;
-                                    height: 100%;
-                                }
-                                .red-loading-3 {
-                                    width: 75%;
-                                    background-color: #e50914;
-                                    height: 100%;
-                                }
-                                .red-loading-4 {
-                                    width: 27%;
-                                    background-color: #e50914;
-                                    height: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-    } 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+.series-wrapper {
+  color: white;
+  padding: 1rem 0;
+  padding-left: 4.6rem;
+}
+@media screen and (max-width: 850px) {
+  .series-wrapper {
+    padding-left: 1rem;
+  }
+}
+.series-wrapper .series-carrousel, .series-wrapper .series-carrousel-bb {
+  margin-top: 1rem;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.series-wrapper .series-carrousel .slick-prev,
+.series-wrapper .series-carrousel .slick-next,
+.series-wrapper .series-carrousel .slick-arrow, .series-wrapper .series-carrousel-bb .slick-prev,
+.series-wrapper .series-carrousel-bb .slick-next,
+.series-wrapper .series-carrousel-bb .slick-arrow {
+  z-index: 999;
+}
+.series-wrapper .series-carrousel .slick-prev, .series-wrapper .series-carrousel-bb .slick-prev {
+  left: 0;
+  color: red;
+  z-index: 1500;
+}
+.series-wrapper .series-carrousel .slick-next, .series-wrapper .series-carrousel-bb .slick-next {
+  right: 0;
+}
+.series-wrapper .series-carrousel__link, .series-wrapper .series-carrousel-bb__link {
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.series-wrapper .series-carrousel__link :focus, .series-wrapper .series-carrousel-bb__link :focus {
+  outline: none;
+}
+.series-wrapper .series-carrousel__link .progress-bar, .series-wrapper .series-carrousel-bb__link .progress-bar {
+  margin-top: 0.6rem;
+  background-color: #858585;
+  height: 0.4rem;
+  width: 13.8rem;
+}
+.series-wrapper .series-carrousel__link .progress-bar__completed, .series-wrapper .series-carrousel-bb__link .progress-bar__completed {
+  width: 0;
+  background-color: #C60F0E;
+  height: 100%;
+}
+.series-wrapper .series-carrousel__link .progress-bar .completed-one, .series-wrapper .series-carrousel-bb__link .progress-bar .completed-one {
+  width: 15%;
+}
+.series-wrapper .series-carrousel__link .progress-bar .completed-two, .series-wrapper .series-carrousel-bb__link .progress-bar .completed-two {
+  width: 78%;
+}
+.series-wrapper .series-carrousel__link .progress-bar .completed-three, .series-wrapper .series-carrousel-bb__link .progress-bar .completed-three {
+  width: 30%;
+}
+.series-wrapper .series-carrousel__link .progress-bar .completed-four, .series-wrapper .series-carrousel-bb__link .progress-bar .completed-four {
+  width: 20%;
+}
+.series-wrapper .series-carrousel__link .progress-bar .completed-five, .series-wrapper .series-carrousel-bb__link .progress-bar .completed-five {
+  width: 90%;
+}
+.series-wrapper .series-carrousel__link .progress-bar .completed-six, .series-wrapper .series-carrousel-bb__link .progress-bar .completed-six {
+  width: 20%;
+}
+@media screen and (max-width: 600px) {
+  .series-wrapper .series-carrousel-bb {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .series-wrapper .series-carrousel-bb .series-carrousel__link {
+    margin-top: 2rem;
+    width: 50%;
+  }
+}
+
