@@ -290,8 +290,24 @@ html ::-webkit-scrollbar {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .series-wrapper .series-carrousel .series-carrousel-text,
+  .series-wrapper .series-carrousel-bb .series-carrousel-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .series-wrapper .series-carrousel .series-carrousel-title,
 .series-wrapper .series-carrousel-bb .series-carrousel-title {
+  display: none;
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 20px;
@@ -299,13 +315,50 @@ html ::-webkit-scrollbar {
   padding: 0.5rem 0;
 }
 
+@media screen and (max-width: 600px) {
+  .series-wrapper .series-carrousel .series-carrousel-title,
+  .series-wrapper .series-carrousel-bb .series-carrousel-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .series-wrapper .series-carrousel .series-carrousel-description,
 .series-wrapper .series-carrousel-bb .series-carrousel-description {
+  display: none;
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 1em;
   font-weight: lighter;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .series-wrapper .series-carrousel .series-carrousel-description,
+  .series-wrapper .series-carrousel-bb .series-carrousel-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .series-wrapper .series-carrousel .slick-prev, .series-wrapper .series-carrousel .slick-arrow, .series-wrapper .series-carrousel .slick-arrow,
@@ -402,7 +455,8 @@ html ::-webkit-scrollbar {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: -1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 

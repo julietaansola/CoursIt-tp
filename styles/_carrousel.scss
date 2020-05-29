@@ -21,23 +21,48 @@
     }
     
     .series-carrousel-text {
+      
       width: 20rem;
       text-decoration: none;
+      @media screen and (max-width:600px) {
+        
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
       
     }
     .series-carrousel-title {
+      display:none;
       font-family: 'Open Sans', sans-serif;
       color: white;
       font-size: 20px;
       font-weight: bold;
       padding: 0.5rem 0;
+      @media screen and (max-width:600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
     }
     .series-carrousel-description {
+      
+      display:none;
       font-family: 'Open Sans', sans-serif;
       color: white;
       font-size: 1em;
       font-weight: lighter;
       margin-right: 10px;
+      @media screen and (max-width:600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
     }
     .slick-prev, .slick-arrow, .slick-arrow{
       z-index: 999;
@@ -102,7 +127,8 @@
   @media screen and (max-width:600px) {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: -1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
