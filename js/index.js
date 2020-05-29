@@ -49,10 +49,3 @@ $(document).ready(function () {
    ]
   })
 });
-slickCarrousel()
-
-$(window).resize(function(){
-  if ($(window).width() > 600) {
-      slickCarrousel();   
-  }
-});
