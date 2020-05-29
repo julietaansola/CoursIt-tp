@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <script src="https://kit.fontawesome.com/4422c6237d.js" crossorigin="anonymous"></script>
@@ -12,17 +13,23 @@
     <div class="wrapper">
         <!-- HEADER -->
         <header class="header" id="inicio">
-            <a href="index.html" class="link-js title-link">
-                <img class="header-title" src="./assets/logoCourflix.png" alt="Logo">
-            </a>
-            <nav class="nav">
-                <a href="index.html" class="link-js header-options">Inicio</a>
-                <a href="index.html#series" class="header-options">Series</a>
-                <a href="index.html#peliculas" class="header-options">Peliculas</a>
-                <a href="index.html" class="header-options">Agregados recientemente</a>
-                <a href="index.html" class="header-options">Mi lista</a>
-            </nav>
-        </header>
+          <button class="hamburger hamburger--vortex menu-js" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+          </button>
+          <i class="fas fa-bars fa-bars-js"></i>
+          <a href="index.html" class="link-js title-link">
+              <img class="header-logo" src="./assets/logoCourflix.png" alt="Logo">
+          </a>
+          <nav class="nav nav-js">
+              <a href="#" class="link-js header-options navbar-list-item">Inicio</a>
+              <a href="#series" class="header-options navbar-list-item">Series</a>
+              <a href="#" class="header-options navbar-list-item">Peliculas</a>
+              <a href="#reciente" class="header-options navbar-list-item">Agregados recientemente</a>
+              <a href="#" class="header-options navbar-list-item">Mi lista</a>
+          </nav>
+      </header>
         <!-- END OF HEADER -->
 
        
@@ -50,34 +57,49 @@
             <!-- HERO -->
             
             <!-- CARRROUSEL -->
-            <div class="series-courflix">
-                <div class="series-wrapper" id="series">
-                    <span class="series-title">Temporada 1</span>
-                    <div class="series-carousel">
-                        <div class="serie series-js">
-                            <a href="#" class="preview-link"><img src="./assets/breakingbad01.png" alt="Breaking bad episode 1" class="series-img"></a>
-                            <div class="episode-info">
-                              <span class="episode-title">Principio del fin</span>
-                              <p class="episode-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente voluptas fuga esse numquam minus et magnam repellat quas?</p>
-                            </div>
+            <div class="container" id="preview">
+            <div class="series-wrapper">
+        
+              <h3 class="series-wrapper-title">Temporada 1</h3>
+  
+              <div class="series-carrousel" >
+                  <!-- <span class="left-arrow"><i class="fa fa-arrow-left"></i></span> -->
+                  <a href="preview.html" class="series-carrousel__link series-js">
+                      <img src="./assets/breakingbad01.png" alt="serie" class="series-carrousel__image">
+                      <div class="">
+                        <div class="series-carrousel__text">
+                          <h3 class="series-carrousel__text__h3">El principio del fin</h3>
+                          <h4 class="series-carrousel__text__h4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, veritatis! Qui quod velit</h4>
                         </div>
-                        <div class="serie series-js">
-                            <a href="#" class="preview-link"><img src="./assets/breakingbad02.png" alt="Breaking bad episode 2" class="series-img"></a>
-                            <div class="episode-info">
-                              <span class="episode-title">El gato en la bolsa</span>
-                              <p class="episode-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-                        <div class="serie series-js">
-                            <a href="#" class="preview-link"><img src="./assets/breakingbad03.png" alt="Breaking bad episode 3" class="series-img"></a>
-                            <div class="episode-info">
-                              <span class="episode-title">Y la bolsa en el rio</span>
-                              <p class="episode-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente voluptas fuga esse numquam minus et magnam repellat quas?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                      </div>
+                  </a>
+                  <a href="preview.html" class="series-carrousel__link series-js">
+                      <img src="./assets/breakingbad02.png" alt="serie" class="series-carrousel__image">
+                      <div class="">
+                        <div class="series-carrousel__text">
+                          <h3 class="series-carrousel__text__h3">El gato en la bolsa</h3>
+                          <h4 class="series-carrousel__text__h4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, veritatis! Qui quod velit</h4>
+                      </div>
+                      </div>
+                  </a>
+                  <a href="preview.html" class="series-carrousel__link series-js">
+                      <img src="./assets/breakingbad03.png" alt="serie" class="series-carrousel__image">
+                      <div class="">
+                        <div class="series-carrousel__text">
+                          <h3 class="series-carrousel__text__h3">Y la bolsa en el río</h3>
+                          <h4 class="series-carrousel__text__h4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, veritatis! Qui quod velit</h4>
+                      </div>  
+                      </div>
+                  </a>
+                  
+                  
+                  <!-- <span class="right-arrow"><i class="fa fa-arrow-right"></i></span> -->
+  
+  
+              </div>
+  
+          </div>
+        </div>
             <!-- END OF CARROUSEL -->
         </main>
     <!-- LINKS -->

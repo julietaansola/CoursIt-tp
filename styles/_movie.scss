@@ -13,11 +13,23 @@
             width: 100%;
             color: #fff;
             display: block;
+            @media (max-width: 600px) {
+                
+                  padding: 100px 30px 150px;
+                  min-height: 50vh;
+                  background-position: center;
+                
+              }
         
             .hero-subtitle {
                 font-size: 1.5rem;
                 margin-bottom: 18px;
                 font-weight: bold;
+                @media (max-width: 600px) {
+                    
+                      display: none;
+                    
+                  }
             }
             .hero-title {
                 font-size: 7.5rem;
@@ -25,6 +37,13 @@
                 line-height: 6rem;
                 max-width: 650px;
                 font-weight: bold;
+                @media (max-width: 600px) {
+                    
+                      font-size: 1.5rem;
+                      font-weight: bold;
+                      margin-bottom: -20px;
+                    
+                  }
             }
             .hero-button {
                 display: inline-flex;
@@ -39,6 +58,14 @@
                 color: #fff;
                 font-size: 1.3rem;
                 font-weight: 300;
+                @media (max-width: 600px) {
+                    
+                      width: 131px;
+                      height: 43px;
+                      margin-right: 7px;
+                      border-radius: 3px;
+                    
+                  }
                 &:hover{
                     background: #fff;
                     color: #000
@@ -47,6 +74,11 @@
             .hero-series-subtitle {
                 margin-top: 20px;
                 font-size: 1.4rem;
+                @media (max-width: 600px) {
+                    
+                      display: none;
+                    
+                  }
                 
             }
             .hero-series-description {
@@ -55,7 +87,18 @@
                 max-width: 600px;
                 line-height: 2rem;
                 font-weight: 300;
+                @media (max-width: 600px) {
+                    
+                      display: none;
+                    
+                }
             }
         }
     }
 }
+
+
+  
+  
+  
+ 

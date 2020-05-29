@@ -77,9 +77,13 @@
         border-radius: 50px;
         padding: 7px;
         margin-right: 10px;
-        &:hover{
-            color:  #ED0A1D;
-        }
+        
+    }
+    .fa-thumbs-down:hover{
+       color: #ED0A1D;
+    }
+    .fa-thumbs-up:hover{
+        color: rgb(107, 167, 11);
     }
     .series-description {
         margin-top: 20px;

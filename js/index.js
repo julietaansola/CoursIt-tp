@@ -1,3 +1,18 @@
+const menu = document.querySelector(".menu-js")
+const navLinks = document.querySelector(".nav-js")
+
+
+menu.addEventListener("click", () => {
+  if (menu.style.display = "inline-block") {
+
+    menu.classList.toggle("is-active")
+    if (navLinks.classList.contains("open")) {
+      navLinks.classList.remove("open")
+    } else {
+      navLinks.classList.add("open")
+    }
+  }
+})
 
 
 
@@ -33,4 +48,11 @@ $(document).ready(function () {
     },
    ]
   })
+});
+slickCarrousel()
+
+$(window).resize(function(){
+  if ($(window).width() > 600) {
+      slickCarrousel();   
+  }
 });
