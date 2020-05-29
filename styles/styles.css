@@ -168,7 +168,6 @@ html ::-webkit-scrollbar {
 .series-preview .series-details .coincidence-meter {
   color: #009C04;
   font-weight: bold;
-  
 }
 
 .series-preview .series-details .release-year {
@@ -394,6 +393,19 @@ html ::-webkit-scrollbar {
   outline: none;
 }
 
+@media screen and (max-width: 600px) {
+  .series-carrousel-bb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: -1rem;
+  }
+}
+
 /* LINKS */
 .link {
   padding: 50px 350px;
@@ -482,20 +494,11 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 800px) {
-  .main .hero .hero-img .hero-title {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: -20px;
-
-  }
-}
 @media (max-width: 600px) {
   .main .hero .hero-img .hero-title {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: -20px;
-    margin-left: 50px;
   }
 }
 
@@ -522,12 +525,10 @@ footer {
 
 @media (max-width: 600px) {
   .main .hero .hero-img .hero-button {
-    display:none;
     width: 131px;
     height: 43px;
     margin-right: 7px;
     border-radius: 3px;
-    
   }
 }
 
