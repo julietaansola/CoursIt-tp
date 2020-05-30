@@ -61,6 +61,10 @@ html ::-webkit-scrollbar {
   padding: 12px 85px;
 }
 
+.header .hamburger {
+  margin: 0 -90;
+}
+
 .header .hamburger:hover {
   outline: none;
 }
@@ -170,6 +174,12 @@ html ::-webkit-scrollbar {
   font-weight: bold;
 }
 
+@media screen and (max-width: 700px) {
+  .series-preview .series-details .coincidence-meter {
+    display: none;
+  }
+}
+
 .series-preview .series-details .release-year {
   color: #FFFFFF;
 }
@@ -238,6 +248,12 @@ html ::-webkit-scrollbar {
   border-radius: 50px;
   padding: 7px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 721px) {
+  .series-preview .far {
+    display: none;
+  }
 }
 
 .series-preview .fa-thumbs-down:hover {
@@ -365,7 +381,7 @@ html ::-webkit-scrollbar {
 .series-wrapper .series-carrousel-bb .slick-prev,
 .series-wrapper .series-carrousel-bb .slick-arrow,
 .series-wrapper .series-carrousel-bb .slick-arrow {
-  z-index: 999;
+  z-index: 100;
 }
 
 .series-wrapper .series-carrousel .slick-prev,
