@@ -74,23 +74,16 @@
         font-size: 1.3rem;
         font-weight: 300;
         
-        
+        &:hover{
+            opacity: 0.7;
+    } 
        
     }
     .button-1 {
         background-color: #ED0A1D;
-        &:hover{
-            background-color: #eb8e9c;
-    }
+   
     .button-2{
-        background-color: grey;
-        
-        &:hover{
-            background-color: rgb(230, 226, 226);
-        }
-       
-       
-        
+        background-color: grey; 
     }
     
     }
