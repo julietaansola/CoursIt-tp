@@ -89,7 +89,8 @@ html ::-webkit-scrollbar {
 .header .nav {
   white-space: nowrap;
   display: inline;
-  font-size: 1.2rem;
+  font-size: 21px;
+  line-height: 29px;
 }
 
 @media (max-width: 600px) {
@@ -653,5 +654,6 @@ footer {
 .wrapper {
   min-width: 100vw;
   font-family: "Open Sans", sans-serif;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
