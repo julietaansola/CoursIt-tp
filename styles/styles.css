@@ -53,8 +53,6 @@ html ::-webkit-scrollbar {
   width: 100%;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.801218);
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .header .title-link .header-logo {
