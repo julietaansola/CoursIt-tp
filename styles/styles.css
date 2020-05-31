@@ -309,7 +309,7 @@ html ::-webkit-scrollbar {
 @media screen and (max-width: 600px) {
   .container .series-wrapper {
     padding-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -379,29 +379,6 @@ html ::-webkit-scrollbar {
   font-size: 1em;
   font-weight: lighter;
   margin-right: 10px;
-}
-
-.container .series-wrapper .series-carrousel-bb .slick-prev, .container .series-wrapper .series-carrousel-bb .slick-arrow, .container .series-wrapper .series-carrousel-bb .slick-arrow {
-  z-index: 100;
-}
-
-.container .series-wrapper .series-carrousel-bb .slick-prev {
-  left: 0;
-  color: red;
-  opacity: 0;
-}
-
-.container .series-wrapper .series-carrousel-bb .slick-prev:hover {
-  opacity: 100%;
-}
-
-.container .series-wrapper .series-carrousel-bb .slick-next {
-  right: 0;
-  opacity: 0;
-}
-
-.container .series-wrapper .series-carrousel-bb .slick-next:hover {
-  opacity: 100%;
 }
 
 .container .series-wrapper .series-carrousel-link, .container .series-wrapper .series-carrousel-link-bb {

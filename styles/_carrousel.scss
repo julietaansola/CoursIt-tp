@@ -7,7 +7,7 @@
   padding-left: 4.6rem;
   @media screen and (max-width:600px) {
     padding-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   .series-wrapper-title{
     font-size: 24px;
@@ -66,25 +66,7 @@
       margin-right: 10px;
      
     }
-    .slick-prev, .slick-arrow, .slick-arrow{
-      z-index: 100;
-      
-    }
-    .slick-prev {
-      left: 0;
-      color: red;
-      opacity: 0;
-      &:hover{
-        opacity: 100%;
-      }
-    }
-    .slick-next {
-      right: 0;
-      opacity: 0;
-      &:hover{
-        opacity: 100%;
-      }
-    }
+   
   }
   .series-carrousel-link, .series-carrousel-link-bb{
     margin: 0 0.5rem;
