@@ -73,7 +73,8 @@
         color: #fff;
         font-size: 1.3rem;
         font-weight: 300;
-       
+        
+        
        
     }
     .button-1 {
@@ -83,10 +84,12 @@
     }
     .button-2{
         background-color: grey;
-       
+        
         &:hover{
             background-color: rgb(230, 226, 226);
         }
+       
+       
         
     }
     
@@ -117,5 +120,9 @@
         max-width: 600px;
         line-height: 2.1rem;
         font-weight: 300;
+        @media screen and (max-width:600px) {
+            display: none;
+          }
     }
 }
+

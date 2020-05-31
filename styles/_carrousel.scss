@@ -27,7 +27,6 @@
   .series-carrousel-bb{
     @media screen and (max-width:600px) {
       display: flex;
-      flex-direction: column;
       padding-bottom: 1rem;
   }
     img{
@@ -35,48 +34,37 @@
     }
     
     .series-carrousel-text {
-      
+      display: none;
       width: 20rem;
       text-decoration: none;
       @media screen and (max-width:600px) {
-        
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        letter-spacing: 1px;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        margin-left: 1rem;
       }
       
     }
     .series-carrousel-title {
-      display:none;
+      
       font-family: 'Open Sans', sans-serif;
       color: white;
       font-size: 20px;
       font-weight: bold;
       padding: 0.5rem 0;
-      @media screen and (max-width:600px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
+     
     }
     .series-carrousel-description {
       
-      display:none;
+      
       font-family: 'Open Sans', sans-serif;
       color: white;
       font-size: 1em;
       font-weight: lighter;
       margin-right: 10px;
-      @media screen and (max-width:600px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
+     
     }
     .slick-prev, .slick-arrow, .slick-arrow{
       z-index: 100;
@@ -101,8 +89,9 @@
   .series-carrousel-link, .series-carrousel-link-bb{
     margin: 0 0.5rem;
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     align-items: center;
+    
   
     .progress-bar{
       margin-top: 0.6rem;
@@ -142,12 +131,19 @@
   }
 }
 .series-carrousel-bb{
+  display: flex;
   @media screen and (max-width:600px) {
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 10px;
   }
+  
+  .serie-bb{
+    width: 320px;
+    .series-carrousel-image{
+      width: 100%;
+    }
+    
+  } 
 }
 }
 
