@@ -1,6 +1,7 @@
 .main{
     .hero{ 
         
+        
         .hero-img {
             a{
                 text-decoration: none;
@@ -13,11 +14,13 @@
             width: 100%;
             color: #fff;
             display: block;
+
             @media (max-width: 600px) {
                 
-                  padding: 100px 30px 150px;
-                  min-height: 50vh;
-                  background-position: center;
+                padding: 100px 30px 150px;
+                min-height: 40vh;
+                background-position: center;
+                padding-left: 20px;
                 
               }
         
@@ -27,9 +30,9 @@
                 font-weight: bold;
                 @media (max-width: 600px) {
                     
-                      display: none;
+                    display: none;
                     
-                  }
+                }
             }
             .hero-title {
                 font-size: 7.5rem;
@@ -37,13 +40,15 @@
                 line-height: 6rem;
                 max-width: 650px;
                 font-weight: bold;
+
                 @media (max-width: 600px) {
-                      font-size: 1.5rem;
+                      font-size: 2.5rem;
                       font-weight: bold;
                       margin-bottom: -20px;
-                    
+                      padding-top: 70px ;
                   }
             }
+            
             .hero-button {
                 display: inline-flex;
                 align-items: center;
@@ -57,17 +62,29 @@
                 color: #fff;
                 font-size: 1.3rem;
                 font-weight: 300;
+                
+                
                 @media (max-width: 600px) {
                     
                       width: 131px;
                       height: 43px;
                       margin-right: 7px;
                       border-radius: 3px;
+                      
+                      
                     
                   }
                 &:hover{
                     background: #fff;
                     color: #000
+                }
+                
+                
+            }
+            .button-1{
+                @media (max-width: 600px) {
+                    background-color: #C60F0E ;
+                  
                 }
             }
             .hero-series-subtitle {

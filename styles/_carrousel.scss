@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+.container{
+  
 .series-wrapper {
   color: white;
   padding: 1rem 0;
   padding-left: 4.6rem;
+  @media screen and (max-width:600px) {
+    padding-left: 20px;
+    margin-bottom: 50px;
+  }
   .series-wrapper-title{
     font-size: 24px;
     font-style: normal;
@@ -15,7 +21,15 @@
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
+  
+      
+  }  
+  .series-carrousel-bb{
+    @media screen and (max-width:600px) {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+  }
     img{
       width: 90%;
     }
@@ -84,16 +98,20 @@
       }
     }
   }
-  .series-carrousel-link, .series-carrousel-bb-link{
+  .series-carrousel-link, .series-carrousel-link-bb{
     margin: 0 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+  
     .progress-bar{
       margin-top: 0.6rem;
       background-color: #858585;
       height: 0.4rem;
       width: 13.8rem;
+      @media screen and (max-width:600px) {
+        display: none;
+      }
     }
     .progress-bar-completed {
       width: 0;
@@ -130,6 +148,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+}
 }
 
 
