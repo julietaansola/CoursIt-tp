@@ -76,10 +76,11 @@
     
   
     .progress-bar{
-      margin-top: 0.6rem;
+      margin: 0.6rem 2.5rem;
       background-color: #858585;
       height: 0.4rem;
-      width: 13.8rem;
+      width: 15rem;
+      
       @media screen and (max-width:600px) {
         display: none;
       }
