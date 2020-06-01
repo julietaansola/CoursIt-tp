@@ -322,6 +322,7 @@ html ::-webkit-scrollbar {
   font-style: normal;
   font-weight: bold;
   line-height: 33px;
+  padding-left: 8px;
 }
 
 .container .series-wrapper .series-carrousel,
@@ -332,6 +333,7 @@ html ::-webkit-scrollbar {
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -513,7 +515,7 @@ footer {
 
 .main .hero .hero-img {
   background-size: cover;
-  padding: 300px 80px 250px;
+  padding: 300px 80px 80px;
   min-height: 800px;
   width: 100%;
   color: #fff;
