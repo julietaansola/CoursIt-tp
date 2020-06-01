@@ -55,6 +55,12 @@ html ::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.801218);
 }
 
+@media (max-width: 600px) {
+  .header {
+    padding-left: 100px;
+  }
+}
+
 .header .title-link .header-logo {
   padding: 12px 85px;
 }
