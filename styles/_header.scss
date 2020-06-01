@@ -31,7 +31,7 @@
     .hamburger-box .is-active,
     .hamburger-box .hamburger-inner::before,
     .hamburger-box .hamburger-inner::after {
-        background-color: white;
+        background-color: $white;
     }
 
     .hamburger-box:focus {
@@ -51,7 +51,7 @@
           position: absolute;
           top: 64px;
           left: 0;
-          background-color: rgba(0, 0, 0, 1);
+          background-color: $bcknd-clr;
           padding-left: 1.5rem;
           padding-bottom: 30rem;
           max-width: 250px;
@@ -63,7 +63,7 @@
           width: 25rem;
       }
           .header-options {
-            color: #fff;
+            color: $white;
             padding-right: 27px;
             text-decoration: none;
             font-weight: bold;

@@ -2,7 +2,7 @@
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
     background-size: cover;
     padding: 60px 80px 130px;
-    color: #fff;
+    color: $white;
     min-width: 100vw;
     min-height: 800px;
     font-family: "Open Sans", sans-serif;
@@ -24,7 +24,7 @@
         position: absolute;
         top: 60;
         left: 30;
-        color: #fff;
+        color: $white;
         padding: 25px 0 0;
         font-size: 2rem;
     }
@@ -39,7 +39,7 @@
             margin-right: 10px;
         }
         .coincidence-meter {
-            color: #009C04;
+            color: $green;
             font-weight: bold;
             @media screen and (max-width:700px) {
                 display: none;
@@ -47,16 +47,16 @@
             
         }
         .release-year {
-            color: #FFFFFF;
+            color: $white;
         }
         .appropiate-age {
-            color: #FFFFFF;
+            color: $white;
             padding: 2px 6px;
-            border: 1px solid #979797;
+            border: 1px solid $gray;
             border-radius: 8px;
         }
         .seasons-available {
-            color: #FFFFFF;
+            color: $white;
             font-weight: bold;
         }
     }
@@ -70,7 +70,7 @@
         border-radius: 9px;
         margin-right: 25px;
         text-decoration: none;
-        color: #fff;
+        color: $white;
         font-size: 1.3rem;
         font-weight: 300;
         
@@ -80,10 +80,10 @@
        
     }
     .button-1 {
-        background-color: #ED0A1D;
+        background-color: $main-color;
    
     .button-2{
-        background-color: grey; 
+        background-color:$gray; 
     }
     
     }
@@ -92,7 +92,7 @@
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
-        border: 2px solid #fff;
+        border: 2px solid $white;
         border-radius: 50px;
         padding: 7px;
         margin-right: 10px;
@@ -102,10 +102,10 @@
         
     }
     .fa-thumbs-down:hover{
-       color: #ED0A1D;
+       color: $main-color;
     }
     .fa-thumbs-up:hover{
-        color: rgb(107, 167, 11);
+        color: $green;
     }
     .series-description {
         margin-top: 20px;

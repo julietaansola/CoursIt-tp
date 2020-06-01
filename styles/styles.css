@@ -32,7 +32,7 @@ time, mark, audio, video {
 
 html {
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: #000;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
@@ -83,7 +83,7 @@ html ::-webkit-scrollbar {
 .header .hamburger-box .is-active,
 .header .hamburger-box .hamburger-inner::before,
 .header .hamburger-box .hamburger-inner::after {
-  background-color: white;
+  background-color: #fff;
 }
 
 .header .hamburger-box:focus {
@@ -109,7 +109,7 @@ html ::-webkit-scrollbar {
     position: absolute;
     top: 64px;
     left: 0;
-    background-color: black;
+    background-color: #141414;
     padding-left: 1.5rem;
     padding-bottom: 30rem;
     max-width: 250px;
@@ -211,18 +211,18 @@ html ::-webkit-scrollbar {
 }
 
 .series-preview .series-details .release-year {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .series-preview .series-details .appropiate-age {
-  color: #FFFFFF;
+  color: #fff;
   padding: 2px 6px;
   border: 1px solid #979797;
   border-radius: 8px;
 }
 
 .series-preview .series-details .seasons-available {
-  color: #FFFFFF;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -252,11 +252,11 @@ html ::-webkit-scrollbar {
 }
 
 .series-preview .button-1 {
-  background-color: #ED0A1D;
+  background-color: #E50914;
 }
 
 .series-preview .button-1 .button-2 {
-  background-color: grey;
+  background-color: #979797;
 }
 
 .series-preview .far {
@@ -283,11 +283,11 @@ html ::-webkit-scrollbar {
 }
 
 .series-preview .fa-thumbs-down:hover {
-  color: #ED0A1D;
+  color: #E50914;
 }
 
 .series-preview .fa-thumbs-up:hover {
-  color: #6ba70b;
+  color: #009C04;
 }
 
 .series-preview .series-description {
@@ -305,7 +305,7 @@ html ::-webkit-scrollbar {
 }
 
 .container .series-wrapper {
-  color: white;
+  color: #fff;
   padding: 1rem 0;
   padding-left: 4.6rem;
 }
@@ -373,7 +373,7 @@ html ::-webkit-scrollbar {
 
 .container .series-wrapper .series-carrousel-bb .series-carrousel-title {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #fff;
   font-size: 20px;
   font-weight: bold;
   padding: 0.5rem 0;
@@ -381,7 +381,7 @@ html ::-webkit-scrollbar {
 
 .container .series-wrapper .series-carrousel-bb .series-carrousel-description {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #fff;
   font-size: 1em;
   font-weight: lighter;
   margin-right: 10px;
@@ -399,7 +399,7 @@ html ::-webkit-scrollbar {
 
 .container .series-wrapper .series-carrousel-link .progress-bar, .container .series-wrapper .series-carrousel-link-bb .progress-bar {
   margin: 0.6rem 2.5rem;
-  background-color: #858585;
+  background-color: #979797;
   height: 0.4rem;
   width: 15rem;
 }
@@ -412,7 +412,7 @@ html ::-webkit-scrollbar {
 
 .container .series-wrapper .series-carrousel-link .progress-bar-completed, .container .series-wrapper .series-carrousel-link-bb .progress-bar-completed {
   width: 0;
-  background-color: #C60F0E;
+  background-color: #E50914;
   height: 100%;
 }
 
@@ -599,12 +599,12 @@ footer {
 
 .main .hero .hero-img .hero-button:hover {
   background: #fff;
-  color: #000;
+  color: #141414;
 }
 
 @media (max-width: 600px) {
   .main .hero .hero-img .button-1 {
-    background-color: #C60F0E;
+    background-color: #E50914;
   }
 }
 
