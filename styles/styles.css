@@ -541,6 +541,7 @@ footer {
   font-size: 1.5rem;
   margin-bottom: 18px;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 @media (max-width: 600px) {
