@@ -1,6 +1,6 @@
 const menu = document.querySelector(".menu-js")
 const navLinks = document.querySelector(".nav-js")
-
+const links = document.querySelectorAll(".links-nav-js")
 
 menu.addEventListener("click", () => {
   if (menu.style.display = "inline-block") {
@@ -14,6 +14,12 @@ menu.addEventListener("click", () => {
   }
 })
 
+document.body.onclik = function() {
+  navLinks.classList.remove("open")
+}
+
+// evento para que cierre el menu hamburguesa al clikear un link
+links.forEach(link => link.addEventListener("click", ()=>{ navLinks.classList.remove("open"); }))
 
 
 $(document).ready(function () {
